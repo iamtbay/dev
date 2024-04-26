@@ -1,0 +1,79 @@
+.container{
+    border: 1px solid #fff;
+    min-width: 200px;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap:.5rem;
+}
+
+.dark{
+    border: 1px solid var(--bgColor);
+}
+
+
+.cardImg{
+    width: 100px;
+    height: 100px;
+    background-color: #6666;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+}
+.titleContainer{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.titleContainer h3{
+    text-transform: capitalize;
+}
+.codeLink{
+    position: absolute;
+    border:1px solid #666666;
+    border-radius: 50%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.codeLink:hover{
+    background-color: #303131;
+    transform: scale(1.2);
+    border-color: rgb(231, 231, 231);
+}
+.codeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: .5rem;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.infoTitle{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.infoText{
+    font-style: italic;
+    font-weight: 100;
+}

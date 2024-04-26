@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter, Nunito_Sans } from 'next/font/google'
+import {  Nunito_Sans } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from './context/theme'
 
 const inter = Nunito_Sans({ subsets: ['latin'] })
 
@@ -13,10 +14,14 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className}`}>
+        <ThemeProvider>
+        {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

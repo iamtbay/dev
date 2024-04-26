@@ -1,0 +1,26 @@
+{
+    "projects": [
+    {
+    "id":1,
+    "projectName": "Moikk API",
+    "link": "https://github.com/iamtbay/moikk-social-app",
+    "description":"RestAPI with Gin-gonic, Postgres, JWT Auth"
+  },
+  {
+    "id":2,
+    "projectName": "Real-Estate API",
+    "link": "https://github.com/iamtbay/gofiber-real-estate",
+    "description":"RestAPI with Go-Fiber, Mongodb, Redis"
+  },
+  {
+    "id":3,
+    "projectName": "Valokuvaus",
+    "link": "https://github.com/iamtbay/valokuvaus",
+    "description":"Frontend App with ReactJS,Typescript, Redux, Sass"
+  },
+  {
+    "id":4,
+    "projectName": "Valokuvaus API",
+    "link": "https://github.com/iamtbay/valokuvausApi",
+    "description":"RestAPI for Valokuvaus App with ExpressJS, Typescript, MongoDB"
+  }]}

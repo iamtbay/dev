@@ -1,0 +1,60 @@
+.mainDiv{
+    display: flex;
+    position: relative;
+    width: 90%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+.moveDiv{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid  #666666;
+    padding: .5rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.moveLeft{
+    transform: translateX(-100%);
+}
+.moveRight{
+    transform: translateX(100%);
+}
+.moveDiv:hover{
+    border-color: #fff
+}
+.right{
+    right: -3rem;
+}
+.left{
+    left: -3rem;
+}
+.noCursor{
+    cursor:no-drop
+}
+.slider{
+    transition: all 0.5s ease-in-out ;
+}
+@media only screen and (max-width:450px) {
+    .mainDiv{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:451px) and (max-width:650px) {
+    .mainDiv{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:651px) and (max-width:768px) {
+    
+    .mainDiv{
+      width: 100%;
+    }
+  }

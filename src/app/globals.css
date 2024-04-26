@@ -2,11 +2,24 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --bgColor:#0f1416
+}
 body{
-    background-color: #0F1416;
+    background-color: var(--bgColor);
     height: 100vh;
     color: #fff;
     font-weight: 100;
+    animation: showAnimate 1s;
+}
+ .lightMode{
+    transition: all 1s ease-in-out;
+    background-color: #fff !important;
+    color: var(--bgColor) !important;
+    animation: showAnimate 1s;
+} 
+.lightMode a{
+    color: var(--bgColor);
 }
 a{
     text-decoration: none;
@@ -14,5 +27,17 @@ a{
     transition: all .2s linear;
 }
 a:hover{
-    color: #B5EF7C;
+    color: #B5EF7C !important;
 }
+.entryAnimate{
+    animation-name: showAnimate;
+    animation-duration: 1s;
+}
+@keyframes showAnimate {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

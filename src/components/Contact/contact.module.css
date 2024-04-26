@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    transition: all 0.2s ease-out;
+    font-size: 1.2rem;
+}
+.icon:hover{
+    color: #B5EF7C;
+}
+.circle{
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+.circle:hover{
+    border-color: #514f4f;
+}
+
+.light .circle{
+    border-color: var(--bgColor);
+}
+.light .circle:hover{
+    border-color: #455139;
+}
