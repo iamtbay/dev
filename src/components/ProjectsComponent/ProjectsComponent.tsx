@@ -2,8 +2,7 @@
 import styles from "./projects.module.css"
 import ProjectCard from "../Card/ProjectCard"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
-import { useState } from "react"
-import  projectsJson from "/public/projects.json"
+import { useState,useEffect } from "react"
 
 export type Project = {
   id: number
@@ -15,7 +14,28 @@ export type Project = {
 
 const Projects = () => {
 
-  const projects:Project[] = projectsJson.projects
+  const [projects, setProjects] = useState<Project[]>([
+    {
+      id: 1,
+      projectName: "",
+      link: "",
+      description:"",
+    }
+  ]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/projects.json'); // Path to your JSON file
+        const jsonData = await response.json();
+        setProjects(jsonData.projects);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
 
   return (

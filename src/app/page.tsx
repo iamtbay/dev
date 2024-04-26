@@ -5,10 +5,9 @@ import InfoComponent from '@/components/InfoComponent/InfoComponent'
 import { useTheme } from './context/theme'
 import { IoSunnyOutline,IoMoonOutline } from "react-icons/io5";
 
-type Props = {
-  children: JSX.Element
-}
-export default function Home({ children }: Props) {
+
+
+const Home:React.FC<any> = ({ children })=> {
   const {toggleTheme,theme} =  useTheme()
   
   function changeTheme() {
@@ -40,3 +39,5 @@ export default function Home({ children }: Props) {
     </main>
   )
 }
+
+export default Home

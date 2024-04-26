@@ -1,9 +1,9 @@
 import Link from "next/link"
 import styles from "./projectcard.module.css"
 import { FaGithub } from "react-icons/fa"
-import { Projects } from "../ProjectsComponent/ProjectsComponent"
+import { Project } from "../ProjectsComponent/ProjectsComponent"
 import { useTheme } from "@/app/context/theme"
-const ProjectCard = (props: Projects) => {
+const ProjectCard = (props: Project) => {
   const { projectName, link, description } = props
   
   const {theme} = useTheme()
