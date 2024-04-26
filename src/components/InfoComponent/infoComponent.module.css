@@ -1,0 +1,54 @@
+.container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.titles{
+
+}
+.subTitle{
+    font-size: 36px;
+    font-weight: 100;
+}
+.nameTitle{
+    font-size: 48px;
+    font-weight: 500;
+}
+.line{
+    width: 25%;
+    height: 3px;
+    background-color: #666666;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    transition: all 0.2s linear;
+    font-size: 1.2rem;
+}
+.icon:hover{
+    color: #B5EF7C;
+}
+
+.circle{
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+.circle:hover{
+    border-color: #514f4f;
+}
