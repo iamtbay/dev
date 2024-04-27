@@ -26,7 +26,7 @@ const Projects = () => {
     const fetchData = async () => {
       try {
        // const response = await fetch('/projects.json'); // Path to your JSON file
-        const response = await fetch('/https://iamtbay.github.io/dev/projects.json.json'); // Path to your JSON file
+        const response = await fetch('/https://iamtbay.github.io/dev/projects.json'); // Path to your JSON file
         const jsonData = await response.json();
         setProjects(jsonData.projects);
       } catch (error) {
