@@ -42,6 +42,30 @@
   min-height: 450px;
 }
 
+.notFoundPage{
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: .5rem;
+} 
+.notFoundText{
+  font-size: 2rem;
+  
+}
+.LinkSet{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  
+}
+.mainPageLink{
+  gap: .5rem;
+  display: flex;
+  align-items: center;
+}
+
 .modeIcon{
   font-size: 2rem;
   cursor: pointer;
@@ -58,6 +82,15 @@
   }
 }
 
+@media only screen and (min-width:150px) and (max-width:375px) {
+  .notFoundPage{
+    width: 90%;
+  }
+  .notFoundText{
+    font-size: 1rem;
+  }
+
+}
 @media only screen and (max-width:450px) {
   .main{
   }
@@ -74,6 +107,12 @@
   .logo{
     height: 100%;
   }
+  .notFoundPage{
+    width: 90%;
+  }
+  .notFoundText{
+    font-size: 1.4rem;
+  }
 }
 @media only screen and (min-width:451px) and (max-width:650px) {
   .main{
@@ -89,6 +128,10 @@
   .children{
     width: 100%;
   }
+
+  .notFoundText{
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width:651px) and (max-width:768px) {
   .main{
@@ -100,5 +143,9 @@
   }
   .children{
     width: 95%;
+  }
+
+  .notFoundText{
+    font-size: 1.7rem;
   }
 }

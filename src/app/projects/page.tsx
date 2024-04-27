@@ -7,13 +7,11 @@ import { FaArrowLeft } from "react-icons/fa"
 const ProjectsPage = () => {
   return (
     <Home>
-      <>
         <div className={`${styles.container} entryAnimate`}>
-        <Link href="/"> <p className={styles.mainPageLink}> <FaArrowLeft /> Mainpage</p></Link>
+        <p className={styles.mainPageLink}><Link href="/" className={styles.LinkSet}>  <FaArrowLeft /> Mainpage </Link></p>
         <h1>Projects</h1>
         <Projects />
       </div>
-      </>
     </Home>
   )
 }

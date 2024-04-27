@@ -4,5 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: entryModeAnimation;
+    animation-duration: 1s;
     
 }
+
+@keyframes entryModeAnimation{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

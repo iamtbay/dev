@@ -10,8 +10,8 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 //local
 const getFromLocalStorage = () => {
-    const value = localStorage.getItem("theme")
-    if (typeof window !== "undefined") {
+  if (typeof window !== "undefined") {
+    const value = window.localStorage.getItem("theme")
         if (value === null) {            
             return "dark"
         }

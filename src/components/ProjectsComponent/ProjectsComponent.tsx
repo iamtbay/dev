@@ -1,7 +1,6 @@
 "use client"
 import styles from "./projects.module.css"
 import ProjectCard from "../Card/ProjectCard"
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 import { useState,useEffect } from "react"
 
 export type Project = {
